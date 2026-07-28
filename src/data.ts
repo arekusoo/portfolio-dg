@@ -15,7 +15,7 @@ export const DATA = {
     cta: "Criando identidades, campanhas e padrões visuais com impacto.",
     ctaButton: "Contate-me agora",
     downloadCV: "Baixar Currículo",
-    cvLink: "https://drive.google.com/file/d/1Er4wHfRixepfXT3_IMgKTVgtuVw8n3B1/view?usp=sharing",
+    cvLink: "https://drive.google.com/file/d/1gChBqrPbox2nPN25KnR5pzbBcvMQL2u9/view?usp=drive_link",
     skills: [
       "Designer Gráfico", "UX/UI Designer", "Motion Graphics", "Branding", "Identidade Visual",
       "Documentação Técnica", "Comunicação Visual", "Adobe Creative Suite", "Figma", "Redes Sociais",
@@ -149,7 +149,7 @@ export const DATA = {
     cta: "Creating identities, campaigns, and visual standards with impact.",
     ctaButton: "Contact me now",
     downloadCV: "Download Resume",
-    cvLink: "https://drive.google.com/file/d/1fROp-usFtA_wHDt1juY-CIPSnco8MR0x/view?usp=sharing",
+    cvLink: "https://drive.google.com/file/d/1gChBqrPbox2nPN25KnR5pzbBcvMQL2u9/view?usp=drive_link",
     skills: [
       "Graphic Designer", "UX/UI Designer", "Motion Graphics", "Branding", "Visual Identity",
       "Technical Documentation", "Visual Communication", "Adobe Creative Suite", "Figma", "Social Media",
