@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-bg: #050505;
+  --color-brand-surface: #0f0f0f;
+  --color-brand-text: #e5e5e5;
+  --color-brand-accent: #ffffff;
+  --breakpoint-fhd: 1920px;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text antialiased overflow-x-hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-brand-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+  }
+}
+
+@layer components {
+  .organic-card {
+    @apply bg-white/[0.02] backdrop-blur-2xl border border-white/[0.05] rounded-[2.5rem] transition-all duration-500 hover:bg-white/[0.04] hover:border-white/[0.1] hover:shadow-2xl hover:shadow-black/50 hover:-translate-y-1;
+    will-change: backdrop-filter, transform;
+  }
+
+  .sidebar-floating {
+    @apply bg-white/[0.02] backdrop-blur-2xl border border-white/[0.05] rounded-[2.5rem] shadow-2xl;
+    will-change: backdrop-filter;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold mb-12 tracking-tight text-white;
+  }
+
+  .skill-chip {
+    @apply px-5 py-2.5 bg-white/[0.03] border border-white/[0.05] rounded-full text-sm font-medium text-gray-400 transition-all duration-300;
+  }
+
+  .cta-button {
+    @apply px-8 py-4 bg-white text-black rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-lg hover:shadow-white/10;
+  }
+
+  .project-thumb {
+    @apply w-full aspect-video rounded-[1.8rem] object-cover mb-4 bg-white/[0.02];
+  }
+
+  .bg-glow {
+    @apply fixed -z-10 w-[1000px] h-[1000px] rounded-full blur-[120px] pointer-events-none;
+    will-change: filter;
+  }
+}
